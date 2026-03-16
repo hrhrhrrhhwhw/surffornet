@@ -1,19 +1,23 @@
-import { Button } from "@/components/ui/button"
+import ForShop from '@/components/for-shop'
+import Header from '@/components/header'
+import Hero from '@/components/hero'
+import Price from '@/components/price'
+import Quote from '@/components/quote'
+import Reason from '@/components/reason'
+import Shadcn from '@/components/shadcn'
+import Stack from '@/components/stack'
 
 export default function Page() {
-  return (
-    <div className="flex min-h-svh p-6">
-      <div className="flex max-w-md min-w-0 flex-col gap-4 text-sm leading-loose">
+    return (
         <div>
-          <h1 className="font-medium">Project ready!</h1>
-          <p>You may now add components and start building.</p>
-          <p>We&apos;ve already added the button component for you.</p>
-          <Button className="mt-2">Button</Button>
+            <Header />
+            <Shadcn />
+            <Hero />
+            <Stack />
+            <Quote />
+            <Reason />
+            <Price />
+            <ForShop />
         </div>
-        <div className="font-mono text-xs text-muted-foreground">
-          (Press <kbd>d</kbd> to toggle dark mode)
-        </div>
-      </div>
-    </div>
-  )
+    )
 }
